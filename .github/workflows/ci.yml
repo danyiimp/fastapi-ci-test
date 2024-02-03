@@ -50,7 +50,7 @@ jobs:
 
     steps:
       - name: Login to Docker
-        run: echo ${{ secrets.DOCKER_TOKEN }} | docker login -u ${{ secrets.DOCKER_LOGIN }} --password stdin
+        run: echo ${{ secrets.DOCKER_TOKEN }} | docker login -u ${{ secrets.DOCKER_LOGIN }} --password-stdin
 
       
       - uses: actions/checkout@v4
